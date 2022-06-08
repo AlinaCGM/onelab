@@ -41,28 +41,20 @@ function Mies() {
 }, [selectedCategory])
 
 
-const mapCategories=
-
-data.map((item, index)=>{
+const mapCategories = data.map((item, index)=>{
 
     return(
     
-    
-        <option value={item}  key={index} >
+        <option value = {item}  key = {index} >
 {item}
-
         </option>
-        
-
-    
+     
     )
 })
 
 
   return (
     <div>
-     
-
      <h4>Choose Category</h4>
      {loading?(loading): error?('error'): (
         <div>
